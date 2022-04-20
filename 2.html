@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            width: 100%;
+            height: 4rem;
+            display: flex;
+            background-color: burlywood;
+        }
+        ol{
+            list-style: none;
+            display: flex;
+            font-weight: 1000;
+        }
+        #logo{
+            height: 3.5rem;
+            width: 3.5rem;
+            margin-left: 10px;
+        }
+        .logo{
+            width: 5rem;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        li{
+            margin: 1.4rem;
+            cursor: pointer;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-image: url("bg.jpg");
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+
+        }
+       
+        .cup{
+            width: 20rem;
+            height: 20rem;
+            border-radius: 50%;
+            background-color: brown;
+            margin-top: 1rem;
+            background-image: url("cup.jpg");
+            background-position: center;
+            background-size: cover;
+        }
+        .tagline{
+            font-size: 2rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin-top: 1rem;
+            color: bisque;
+            text-align: center;
+        }
+        .options{
+            width: 34rem;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .btn{
+            width: 7rem;
+            height: 3rem;
+            background-color: black;
+            border-radius: 13px;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .about-btn{
+            margin-top: 2rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img id="logo" src="coffee-logo.png" alt="">
+        </div>
+        <div class="options">
+            <ol>
+                <li>Home</li>
+                <li>Variety</li>
+                <li>About</li>
+            </ol>
+        </div>
+        <div class="line">
+            <h1>Coffee अड्डा</h1>
+            <h4 style="margin-left: 6rem;">A Place To chill</h4>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="tagline">
+                <h3>LIFE IS SHORT</h3>
+                <h3>STAY AWAKE FOR IT.</h3>
+                <!-- <h3>Coffee अड्डा</h3>
+                <h5>A Place To chill</h5> -->
+            </div>
+            <div class="cup"></div>
+            <div class="about-btn">
+                <button class="btn">About Us</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

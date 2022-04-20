@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT4</title>
+</head>
+<body>
+    <div id="changeBack" style="margin-top:80px; height: 500px; width: 500px;">
+        <center>
+        ENTER COLOR <input type="text" id="color">
+        <button onclick="func()">CHANGE COLOR</button>
+        </center>
+    </div>
+    <script>
+        function func(){
+        let col=document.getElementById("color").value;
+        document.getElementById("changeBack").style.background=col;}
+    </script>
+</body>
+</html>
