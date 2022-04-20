@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+             Calculator
+        </title>
+        <link rel="stylesheet" href="calci.css">
+    </head>
+    <body>
+     <div class ="main">
+         <input id="inp" style="width: 205px; "  type="text">
+         <table>
+             <tr>
+                 <td>
+                     <button  class="bt" onclick="func(7)">7</button>
+                 </td>
+                 <td>
+                    <button class="bt"  onclick="func(8)" >8</button>
+                </td>
+                <td>
+                    <button class="bt" onclick="func(9)">9</button>
+                </td>
+                <td>
+                    <button class = "bt" onclick="func('/')">/</button>
+                </td>
+          
+             <tr>
+                <td>
+                    <button class="bt" onclick="func(4)">4</button>
+                </td>
+                <td>
+                   <button class="bt" onclick="func(5)">5</button>
+               </td>
+               <td>
+                   <button class="bt" onclick="func(6)">6</button>
+               </td>
+               <td>
+                <button class = "bt" onclick="func('')"></button>
+            </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="bt" onclick="func(1)">1</button>
+                </td>
+                <td>
+                   <button class="bt" onclick="func(2)">2</button>
+               </td>
+               <td>
+                   <button class="bt" onclick="func(3)">3</button>
+               </td>
+               <td>
+                <button class = "bt" onclick="func('+')">+</button>
+            </td>
+            </tr>
+            <tr>
+                <td >
+                    <button   class="bt" onclick="func(0)">0</button>
+                </td>
+                <td>
+                   <button class="bt" onclick="func('.')">.</button>
+               </td>
+               <td>
+                <button class = "bt" onclick="func('=')">=</button>
+            </td>
+            <td>
+                <button class = "bt" onclick="func('-')">-</button>
+            </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <button style="width: 205px"; class = "bt" onclick="func('clear')">Clear</button>   
+                </td>
+            </tr>
+         </table>
+     </div>
+     <script>
+         let num1, num2, op;
+         function func(str)
+         {
+             var box = document.getElementById("inp");
+             
+             if(str == '+')
+             {
+                num1 = parseInt(box.value);
+                console.log(num1);
+                box.value = "";
+                op = str;
+             }
+             else if(str == '-')
+             {
+                num1 = parseInt(box.value);
+                box.value = "";
+                op = str;
+             }
+             else if(str == '/')
+             {
+                num1 = parseInt(box.value);
+                box.value = "";
+                op = str;
+             }
+             else if(str == '*')
+             {
+                num1 = parseInt(box.value);
+                box.value = "";
+                op = str;
+             }
+             else if(str == '=')
+             {
+                num2 = parseInt(box.value);
+             
+                if(op=='+')
+                box.value = num1 + num2  ;
+                else if(op == '-')
+                {
+                    box.value = num1 - num2  ;
+                }
+                else if(op == '/')
+                {
+                    box.value = num1 / num2  ;
+                }
+                else if(op == '*')
+                {
+                    box.value = num1 * num2  ;
+                }
+                
+                
+             }
+             else if(str == 'clear')
+             box.value = "";
+            else
+             box.value += str;
+         }
+     </script>
+    </body>
+</html>

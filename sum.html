@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <body>
+            <label for="firno">Enter First Number</label><br>
+            <input id="firno" type="number" placeholder="Enter First Number"><br>
+            <label for="secno">Enter Second Number</label><br>
+            <input id="secno" type="number" placeholder="Enter Second Number"><br>
+            <button onclick="abc()">Click me</button> 
+        </body>
+        <script language="javascript" type="text/javascript">
+            
+            function abc(a, b){
+                var a= parseInt(document.getElementById("firno").value);
+                var b= parseInt(document.getElementById("secno").value);
+                c=a+b;
+                document.write("Answer is: " + c);
+            }
+            
+        </script>
+    </head>
+</html>
